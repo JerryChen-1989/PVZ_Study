@@ -36,6 +36,8 @@ android {
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.7.0'
+    // OnBackPressedDispatcher 需要显式依赖，避免云端编译报符号找不到
+    implementation 'androidx.activity:activity:1.9.0'
     // WebView 增强（可选）：androidx.webkit 提供深色模式等能力
     implementation 'androidx.webkit:webkit:1.11.0'
 }

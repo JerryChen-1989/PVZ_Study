@@ -41,7 +41,9 @@ jobs:
       # 4. 编译 Debug + Release APK
       #    （release 使用 debug 签名，下载即可直接安装）
       - name: Build APK
-        run: gradle assembleDebug assembleRelease --no-daemon
+        env:
+          ANDROID_HOME: ${{ env.ANDROID_SDK_ROOT }}
+        run: gradle assembleDebug assembleRelease --no-daemon --stacktrace
 
       # 5. 上传 APK 为 Artifact（任何一次运行都能下载）
       - name: Upload APK artifact
