@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 无 ActionBar 全屏主题，状态栏用草绿色贴合游戏风格 -->
+    <style name="Theme.PvzStudy" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">#3A8C3F</item>
+        <item name="android:windowBackground">#F5FBEF</item>
+    </style>
+</resources>

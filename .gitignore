@@ -1,0 +1,16 @@
+# Gradle 编译产物
+.gradle/
+build/
+app/build/
+
+# 本地环境配置
+local.properties
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# 签名文件（勿提交私钥）
+*.jks
+*.keystore

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 矢量启动图标：草绿圆底 + 简笔向日葵，免 PNG 素材 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 圆形草绿背景 -->
+    <path
+        android:fillColor="#7BC47F"
+        android:pathData="M54,54m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0" />
+
+    <!-- 花瓣（8 片，金黄色） -->
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M54,18c4,8 4,14 0,20c-4,-6 -4,-12 0,-20z
+M54,90c-4,-8 -4,-14 0,-20c4,6 4,12 0,20z
+M18,54c8,-4 14,-4 20,0c-6,4 -12,4 -20,0z
+M90,54c-8,4 -14,4 -20,0c6,-4 12,-4 20,0z
+M29,29c8,2 13,6 15,13c-7,-2 -12,-6 -15,-13z
+M79,79c-8,-2 -13,-6 -15,-13c7,2 12,6 15,13z
+M79,29c-2,8 -6,13 -13,15c2,-7 6,-12 13,-15z
+M29,79c2,-8 6,-13 13,-15c-2,7 -6,12 -13,15z" />
+
+    <!-- 花芯（棕色圆） -->
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M54,54m-14,0a14,14 0,1 1,28 0a14,14 0,1 1,-28 0" />
+
+    <!-- 笑脸眼睛 -->
+    <path
+        android:fillColor="#4E342E"
+        android:pathData="M48,50m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0" />
+    <path
+        android:fillColor="#4E342E"
+        android:pathData="M60,50m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0" />
+
+    <!-- 笑脸嘴巴 -->
+    <path
+        android:strokeColor="#4E342E"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M48,58q6,5 12,0" />
+</vector>

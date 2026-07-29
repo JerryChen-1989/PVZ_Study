@@ -1,0 +1,41 @@
+// ============================================
+// app 模块编译配置
+// - minSdk 24（Android 7.0+，覆盖绝大多数儿童平板/手机）
+// - 纯 Java + WebView，无 Kotlin、无第三方依赖，编译快且稳
+// ============================================
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.jerry.pvzstudy'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.jerry.pvzstudy"   // 应用包名，可自行修改
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    buildTypes {
+        release {
+            // 演示用：release 也用 debug 签名，装机即用。
+            // 正式上架请替换为自己的 keystore 签名配置。
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    // WebView 增强（可选）：androidx.webkit 提供深色模式等能力
+    implementation 'androidx.webkit:webkit:1.11.0'
+}
