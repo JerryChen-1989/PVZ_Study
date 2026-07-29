@@ -2,6 +2,7 @@ package com.jerry.pvzstudy;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -43,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
 
         // 所有跳转都留在 WebView 内，不弹外部浏览器
         webView.setWebViewClient(new WebViewClient());
+        // 关键：不设置 WebChromeClient 时，JS 的 alert/confirm 会被静默吞掉
+        webView.setWebChromeClient(new WebChromeClient());
 
         // 加载内置游戏页面
         webView.loadUrl("file:///android_asset/index.html");
